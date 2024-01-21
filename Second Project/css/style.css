@@ -1,0 +1,242 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+/* CSS VARIABLES */
+:root{
+    --navbar-height:45px
+}
+
+
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+#navbar:before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* NAVGATION BAR: LOGO AND IMAGE  */
+#logo{
+    margin: 2px 5px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 2px 3px;
+}
+/* NAVIGATION BAR : LIST AND STYLING  */
+#navbar ul{
+    display: flex;
+    margin-left: 100px;
+    font-family: 'Noto Sans Nabataean', sans-serif;
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-left: 50px;
+}
+#navbar ul li a{
+    text-align: center;
+    display: block;
+    padding: 20px 40px;
+    border-radius: 30px;
+    color: rgb(243, 236, 236);
+    text-decoration: none;
+} 
+
+#navbar ul li a:hover{
+    color: blue;
+    background-color: white;
+}
+
+/* HOME SECTION  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+}
+
+#home::before{
+    content: "";
+    background: url('../pic1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px ;
+    height: 450px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.60;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Services Class */
+#services{
+    margin: 5px 10px;
+    display: flex;
+    
+}
+.servicescontainer{
+    height: 260px;
+}
+#services .box{
+    text-align: center;
+    border: 4px solid green;
+    padding: 20px;
+    margin: 5px 8px;
+    border-radius: 28px;
+    background-color: rgb(187, 192, 236);
+    
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#cart{
+    position: relative;
+    width: 150px;
+    height: 150px;
+   
+}
+#services .box p{
+
+    font-family: 'Anton', sans-serif;
+}
+
+/* Client Section  */
+#client-section{
+    position: relative;
+    height: 200px;
+}
+#client-section::before{
+    
+    display: flex;
+    content: "";
+    position: absolute;
+    background: url(../pic2.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 0px 30px;
+}
+#clients img{
+    height: 120px;
+}
+
+/* CONTACT SECTION  */
+#contact{
+    position: relative;
+    padding: .4px;
+    margin: 0px 0px;
+}
+#contact::before{
+    margin: 58px 0px;
+    padding: 53px;
+    content: "";
+    position: absolute;
+    width: 93%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: .8rem;
+}
+#contact-box form{
+   width: 40%;
+}
+#contact-box label{
+   font-size: 1.4rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 1px 0px 0px 0px;
+    margin: 0px 0px;
+    position: relative;
+    height: 24px;  
+}
+.center1{
+    text-align: center;
+}
+.contactus{
+    position: relative;
+    text-align: center;
+margin-top: 64px;
+}
+/* UTILITY CLASSES */
+.h-primary{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.h-secondary{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7rem;
+    padding: 20px;
+}
+.btn{
+    padding: 10px 20px;
+    border: 4px solid black;
+    background-color: darkviolet;
+    color: white;
+    margin: 20px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    display: block;
+    margin-top: 110px;
+}

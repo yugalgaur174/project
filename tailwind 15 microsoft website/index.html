@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Microsoft Website</title>
+</head>
+
+<body> 
+    <div class="navbar flex justify-between items-center p-4 xl:mx-4 2xl:mx-" >
+        <div class="flex justify-center items-center md:order-2">
+            <div class="hamburger inline-block cursor-pointer md:hidden ">
+                <div class="line h-0.5 w-5 my-1 bg-black "></div>
+                <div class="line h-0.5 w-5 my-1 bg-black "></div>
+                <div class="line h-0.5 w-5 my-1 bg-black "></div>
+            </div>
+            <div class="search px-3 md:hidden w-11 "><img src="logo.svg" alt=""></div>
+        </div>
+
+
+        <div class="logo text-center  inset-0 md:order-1 flex">
+           <div class="w-28"> 
+            <img src="logo.png" alt="">
+           </div>
+            <div class="features absolute w-fit md:static md:w-auto bg-gray-200 md:bg-white inset-0 -translate-x-96 md:flex md:mx-4 md:space-x-6 md:translate-x-0 " >
+                <div class="items hover:underline">Microsoft 365</div>
+                <div class="items hover:underline hover:underline-offset-4 cursor-pointer">Teams </div>
+                <div class="items hover:underline hover:underline-offset-4 cursor-pointer">Windows </div>
+                <div class="items hover:underline hover:underline-offset-4 cursor-pointer">Surface </div>
+                <div class="items hover:underline hover:underline-offset-4 cursor-pointer">Xbox </div>
+                <div class="items hover:underline hover:underline-offset-4 cursor-pointer">Support</div>
+            </div>
+        </div>
+        <div class="cart text-center md:order-3 flex">
+            <div class="search hidden md:block"> All Microsoft 
+
+            </div>
+            <img class="w-6 mr-2 ml-5 hidden md:block" src="logo.svg" alt="">
+            <div class="flex">
+                <img class="w-6 mr-3 ml-5 " src="iconmonstr-shopping-cart-thin.svg" alt="">
+                <img class="w-6 mr-3 ml-5 " src="iconmonstr-user-circle-thin.svg" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="slider flex flex-col md:flex-row mx-1    justify-center 2xl:justify-center 3xl">
+        <div class="right bg-[#f2f2f2]  2xl:h-1/2 ">
+            <img src="laptop.png" alt="">
+        </div>
+        <div class="left  flex flex-col   bg-white md:bg-[#f2f2f2] shadow-md md:shadow-none p-5 h-64 md:h-auto justify-center">
+            <h1 class="text-3xl font-medium">Surface Pro 9  </h1>
+            
+            <p class=" py-4 pr-8 ">Tablet versatility and laptop power — all in one ultra-portable device</p>
+            <button class="text-white bg-[#0067b8] p-2.5 font-bold w-fit">Learn More</button>
+        </div>
+    </div>
+
+
+    <div class="promo space-y-6 flex flex-col md:flex-row justify-center text-center">
+        <div class="item flex md:flex-col items-center mx-5 space-x-3 mt-6 ">
+            <img src="windows.webp" alt="">
+            <span class="font-medium">Choose your Microsoft 365</span>
+        </div>
+        <div class="item flex md:flex-col items-center mx-5 space-x-3">
+            <img src="xbox.webp" alt="">
+            <span class="font-medium">Buy Xbox games and consoles</span>
+        </div>
+        <div class="item flex md:flex-col items-center mx-5 space-x-3">
+            <img src="windows.webp" alt="">
+            <span class="font-medium">Get Windows 11</span>
+        </div>
+        <div class="item flex md:flex-col items-center mx-5 space-x-3">
+            <img src="exploresurface.webp" alt="">
+            <span class="font-medium">Explore Surface devices</span>
+        </div>
+    </div>
+</body>
+
+</html>
